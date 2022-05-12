@@ -20,6 +20,18 @@ public class ProdusFactory {
         if("Apa".equals(type)){
             return new Apa("Apa", 2.5f);
         }
+        if("Sunca".equals(type)){
+            return new Sunca("Sunca", 12.0f);
+        }
+        if("Mere".equals(type)){
+            return new Mere("Mere", 1.75f);
+        }
+        if("Banane".equals(type)){
+            return new Banane("Banane", 2.80f);
+        }
+        if("Salata".equals(type)){
+            return new Salata("Salata", 5.9f);
+        }
         return null;
     }
 

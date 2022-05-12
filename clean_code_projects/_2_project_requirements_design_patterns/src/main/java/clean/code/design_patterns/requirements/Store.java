@@ -16,6 +16,10 @@ public class Store {
         produses.add(ProdusFactory.getProdus("Oua"));
         produses.add(ProdusFactory.getProdus("Carne"));
         produses.add(ProdusFactory.getProdus("Apa"));
+        produses.add(ProdusFactory.getProdus("Sunca"));
+        produses.add(ProdusFactory.getProdus("Salata"));
+        produses.add(ProdusFactory.getProdus("Mere"));
+        produses.add(ProdusFactory.getProdus("Banane"));
     }
 
     public boolean inStock(Produs prod){
