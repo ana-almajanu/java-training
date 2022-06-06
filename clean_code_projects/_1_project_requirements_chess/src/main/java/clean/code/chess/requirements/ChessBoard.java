@@ -18,8 +18,6 @@ public class ChessBoard {
         pawn.setYCoordinate(yCoordinate);
         int i = pawn.getXCoordinate();
         int j =  pawn.getYCoordinate();
-        //ChessBoard[][] tabla[MAX_BOARD_WIDTH][MAX_BOARD_HEIGHT]=Pawn.getChessBoard();
-        //Pawn.chessBoard[i][j]=1;
         numberOfPieces++;
         if(IsLegalBoardPosition(i, j)){
             this.pieces[i][j]=pawn;
@@ -28,7 +26,6 @@ public class ChessBoard {
             pawn.setXCoordinate(-1);
             pawn.setYCoordinate(-1);
         }
-
         //throw new UnsupportedOperationException("Need to implement ChessBoard.add()");
     }
 
@@ -36,8 +33,6 @@ public class ChessBoard {
         if(xCoordinate>=MAX_BOARD_WIDTH || yCoordinate>=MAX_BOARD_HEIGHT || yCoordinate <0 || xCoordinate < 0){
             return false;
         } else return true;
-
-
         //throw new UnsupportedOperationException("Need to implement ChessBoard.IsLegalBoardPosition()");
     }
 }
